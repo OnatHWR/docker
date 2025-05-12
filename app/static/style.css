@@ -1,0 +1,41 @@
+/* static/style.css */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+.current {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 2em;
+    padding-top: 1em;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

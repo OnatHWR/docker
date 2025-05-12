@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Data</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Titanic Dataset</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/titanic" class="current">Titanic</a>
+            <a href="https://github.com/OnatHWR" target="_blank">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>First 5 rows of the dataset</h2>
+        {{ table|safe }}
+        
+        <h2>Survival by Gender</h2>
+        <img src="{{ url_for('static', filename='survival_chart.png') }}" alt="Survival Chart">
+    </main>
+
+    <footer>
+        <p>Created by Onat Arzoglu</p>
+    </footer>
+</body>
+</html>
